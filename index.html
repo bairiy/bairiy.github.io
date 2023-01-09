@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="theme-color" content="#ffffff">
+<meta name="renderer" content="webkit">
+<!-- <link rel="dns-prefetch" href="https://www.acg123.co/"> -->
+<!-- <link rel="dns-prefetch" href="//libs.baidu.com"> -->
+<!-- <link rel="canonical" href="https://www.acg123.co/"> -->
+<title>新首页本地HTML导航页浏览器首页</title>
+<meta name="description" content="新首页">
+<meta name="keywords" content="新首页">
+<meta name="author" content="新首页">
+<link href="favicon.ico" type="image/x-icon" rel="icon">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<style>
+  body{background: url(images/beijingtu.webp) no-repeat fixed;background-size: cover;}
+</style>
+</head>
+<body onkeydown="BindEnter(event)">
+
+
+
+
+
+<meta charset="gb2312" /> 
+<title>居中</title> 
+<style> 
+.w3cschool{text-align:center} 
+</style> 
+</head> 
+<body> 
+<div class="w3cschool"><iframe width="800" height="150" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=48&num=6&icon=1"></iframe></div> 
+
+
+
+<div id="top">
+<div class="bg">
+<div class="kuandu">
+<div class="search fr">
+<form name="submitform2">
+<div class="searchtabs">
+<input type="radio" class="searchradio" id="searchbaidu" name="searchtab" value="google" checked="checked"><span class="searchradiotext">GG</span>
+<input type="radio" class="searchradio" id="searchgoogle" name="searchtab" value="百度"><span class="searchradiotext">BD</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="bilibili"><span class="searchradiotext">B</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="acg"><span class="searchradiotext">DM</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="EX"><span class="searchradiotext">EX</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="vndb"><span class="searchradiotext">VN</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="nhentai"><span class="searchradiotext">NH</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="nyaa"><span class="searchradiotext">NY</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="Snyaa"><span class="searchradiotext">SN</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="KZ"><span class="searchradiotext">KZ</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="wb"><span class="searchradiotext">wb</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="TB"><span class="searchradiotext">TB</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="JD"><span class="searchradiotext">JD</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="TM"><span class="searchradiotext">TM</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="tw"><span class="searchradiotext">tw</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="PS"><span class="searchradiotext">PS</span>
+<input type="radio" class="searchradio" id="searchacg" name="searchtab" value="PZ"><span class="searchradiotext">PZ</span>
+
+
+
+
+</div>
+<input type="text" id="opentext" placeholder=" 新标签打开搜索结果" name="word" autocomplete="off">
+<input type="button" id="searchsubmit" class="searchsubmit" value="搜索" onclick="searchopen()">
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function searchopen() {
+    var searchmode = $("input[name='searchtab']:checked").val();
+    
+    var searchkeyword = $("#opentext").val();
+    switch (searchmode) {
+      case "google":
+
+            window.open('https://www.google.co.jp/search?q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+      case "baidu":
+            window.open('https://www.baidu.com/baidu?word=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+      case "acg":
+                  window.open('https://share.acgnx.net/search.php?keyword=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+        case "bilibili":
+
+                  window.open('https://search.bilibili.com/all?keyword='  + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+        case "EX":
+                  window.open('https://exhentai.org/?f_gamecg=on&f_western=on&f_misc=on&f_search=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break; 
+       case "vndb":
+                  window.open('https://vndb.org/v/all?sq=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break; 
+       case "nhentai":
+                  window.open('https://nhentai.net/search/?q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+       case "nyaa":
+                  window.open('https://nyaa.si/?f=0&c=0_0&q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+       case "Snyaa":
+                  window.open('https://sukebei.nyaa.si/?f=0&c=0_0&q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+       case "wb":
+                  window.open('https://s.weibo.com/weibo?q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "TB":
+                  window.open('http://s.taobao.com/search?q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "KZ":
+                  window.open('https://chrome.google.com/webstore/search/' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "JD":
+                  window.open('https://search.jd.com/Search?keyword=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "TM":
+                  window.open('http://list.tmall.com/search_product.htm?q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "tw":
+                  window.open('https://twitter.com/search?q=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "PS":
+                  window.open('https://www.pixiv.net/member.php?id=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+             case "PZ":
+                  window.open('https://www.pixiv.net/member_illust.php?mode=medium&illust_id=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+      break;
+      default:
+                  window.open('https://www.baidu.com/baidu?word=' + encodeURIComponent(searchkeyword)
+,'_blank'); 
+    }
+  }
+  function BindEnter(obj){
+    var button = document.getElementById('searchsubmit');
+    if(obj.keyCode == 13)
+        {
+            button.click();
+            obj.returnValue = false;
+            
+        }
+  }
+  
+</script>
+
+
+<div id="icon_list">
+<ul>
+    <li class="project"> <a href=http://www.bilibili.com/ title=哔哩哔哩 target=_blank> <img alt=哔哩哔哩 src=picture/bili.png>
+          <div class="title"><span>哔哩哔哩</span></div>
+        </a></li><li class="project"> <a href=https://www.acfun.cn/ title=AcFun target=_blank> <img alt=AcFun src=picture/acfun.jpg>
+          <div class="title"><span>AcFun</span></div>
+        </a></li><li class="project"> <a href=https://www.agefans.net/ title=AGE动漫 target=_blank> <img alt=AGE动漫 src=picture/nico.png>
+          <div class="title"><span>AGE动漫</span></div>
+        </a></li><li class="project"> <a href=https://pan.baidu.com/ title=百度云盘 target=_blank> <img alt=百度云盘 src=picture/baiduyun.png>
+          <div class="title"><span>百度云盘</span></div>
+        </a></li><li class="project"> <a href=http://www.pixiv.net/ title=pixiv target=_blank> <img alt=pixiv src=picture/pixiv.png>
+          <div class="title"><span>pixiv</span></div>
+        </a></li><li class="project"> <a href=https://myanimelist.net title=追番记录 target=_blank> <img alt=追番记录 src=picture/faviconv5.ico>
+          <div class="title"><span>追番记录</span></div>
+        </a></li><li class="project"> <a href=https://mikanani.me/ title=蜜柑计划 target=_blank> <img alt=蜜柑计划 src=picture/mijian.ico>
+          <div class="title"><span>蜜柑计划</span></div>
+        </a></li><li class="project"> <a href=http://bangumi.tv/ title=番组计划 target=_blank> <img alt=番组计划 src=picture/bangumi.png>
+          <div class="title"><span>番组计划</span></div>
+        </a></li><li class="project"> <a href=https://share.dmhy.org// title=动漫花园target=_blank> <img alt=动漫花园 src=picture/dmhy.ico>
+          <div class="title"><span>动漫花园</span></div>
+        </a></li><li class="project"> <a href=http://www.weibo.com/ title=新浪微博 target=_blank> <img alt=新浪微博 src=picture/weibo.ico>
+          <div class="title"><span>新浪微博</span></div>
+        </a></li><li class="project"> <a href=http://tieba.baidu.com/ title=百度贴吧 target=_blank> <img alt=百度贴吧 src=picture/tieba.ico>
+          <div class="title"><span>百度贴吧</span></div>
+        </a></li>  </ul>
+</div>
+<div class="clear"></div>
+<div id="rfloat">
+<ul>
+<li><a href="#">返回顶部</a></li>
+<li><a href="https://www.google.co.jp" title="谷歌搜索" target="_blank">谷歌搜索</a></li>
+<li><a href="#nav_list_1">常用网址</a></li>
+<li><a href="#nav_list_2">深藏不露</a></li>
+<li><a href="#nav_list_3">刺螈绅士</a></li>
+<li><a href="#nav_list_4">返回底部</a></li> </ul>
+</div>
+<div class="ads">
+<a href="" target="_blank"><img class="adsimg" src=""></a> </div>
+<div class="nav_list" id="nav_list_1">
+<div class="category"><div class="type video"><font class="red text">自定</font></div><ul>
+
+ <li><a href=https://www.youtube.com/ target="_blank">youtube</a></li><li><a href=https://twitter.com/ target="_blank">twitter</a></li><li><a href=https://www.facebook.com/ target="_blank">facebook</a></li><li><a href=https://www.taobao.com/ target="_blank">淘宝</a></li><li><a href=https://bgmlist.com/ target="_blank">番剧放送</a></li><li><a href=https://tweetdeck.twitter.com/ target="_blank">tweetdeck</a></li><li><a href=http://nusc.ameria.fun/ target="_blank">QQ群動画</a></li>    </ul>
+    <a href="#" class="more"></a></div>
+  <div class="category">
+    <div class="type game"><font class="green text">自定</font></div>
+    <ul>
+      <li><a href=https://pixivic.com/ target="_blank">pixivic</a></li><li><a href=https://m.weibo.cn/?sudaref=passport.weibo.cn target="_blank">微博HTML5</a></li><li><a href=http://www.yxdm.tv/ target="_blank">怡萱动漫</a></li><li><a href=https://nyaa.si target="_blank">nyaa表</a></li><li><a href=https://sukebei.nyaa.si/ target="_blank">nyaa里</a></li><li><a href=https://www.appinn.com/ target="_blank">小众软件</a></li><li><a href=https://www.52pojie.cn/forum.php target="_blank">吾爱破解</a></li>    </ul>
+</div>
+  <div class="category">
+    <div class="type novel"><font class="blue text">自定</font></div>
+    <ul>
+      <li><a href=https://www.baidu.com/ target="_blank">百度</a></li><li><a href=https://savevideo.tube/ target="_blank">savevideo</a></li><li><a href=https://blog.reimu.net/ target="_blank">灵梦御所</a></li><li><a href=https://cryental.dev/services/anime/ target="_blank">动漫生肉</a></li><li><a href=https://zh.moegirl.org/Mainpage target="_blank">萌娘百科</a></li><li><a href=https://tools.ipip.net/newping.php target="_blank">ip测试</a></li><li><a href=https://outlook.live.com/mail/0/ target="_blank">微软邮箱</a></li>    </ul>
+</div>
+  <div class="category">
+    <div class="type news"><font class="purple text">自定</font></div>
+    <ul>
+      <li><a href=http://gmail.com/ target="_blank">谷歌邮箱</a></li><li><a href=https://drive.google.com/drive/?utm_source=zh-CN&pli=1 target="_blank">谷歌网盘</a></li><li><a href=https://chrome.google.com/webstore/category/extensions?hl=zh-CN target="_blank">谷歌商店</a></li><li><a href=https://console.cloud.google.com/ target="_blank">谷歌云</a></li><li><a href=https://github.com target="_blank">github</a></li><li><a href=https://greasyfork.org/zh-CN/scripts target="_blank">用户脚本</a></li><li><a href=http://www.eyny.com/forum.php?view=all target="_blank">台湾伊莉</a></li>    </ul>
+    <!--<a href="xinwen.html" class="more">»</a>--></div>
+  <div class="category">
+    <div class="type war"><font class="yellow text">自定</font></div>
+    <ul>
+      <li><a href=https://www.toolnb.com/tools/fangzhan.html target="_blank">仿站工具</a></li><li><a href=http://bbs.pcbeta.com/ target="_blank">远景论坛</a></li><li><a href=https://www.chinapyg.com/ target="_blank">飘云阁</a></li><li><a href=http://mail.qq.com/ target="_blank">QQ邮箱</a></li><li><a href=http://nijie.info/index.php/ target="_blank">ニジエ-nijie</a></li><li><a href=https://www.speedtest.net// target="_blank">speedtest</a></li><li><a href=https://bbs.3dmgame.com/forum.php target="_blank">3DM论坛</a></li>    </ul>
+    <!--<a href="manhua.html" class="more">»</a>--></div>
+  <div class="category">
+    <div class="type music"><font class="yellow text">自定</font></div>
+    <ul>
+      <li><a href=https://share.acgnx.se/ target="_blank">末日动漫库</a></li><li><a href=http://www.xiami.com/ target="_blank">虾米音乐</a></li><li><a href=http://music.163.com/ target="_blank">网易云音乐</a></li><li><a href=http://www.kuwo.cn/ target="_blank">酷我音乐</a></li><li><a href=http://www.kugou.com/ target="_blank">酷狗音乐</a></li><li><a href=http://www.1688.com/ target="_blank">1688</a></li><li><a href=https://www.office.com target="_blank">office365</a></li>    </ul>
+
+</div>
+
+
+</div>
+<div class="ads">
+<a href="" target="_blank"><img class="adsimg" src=""></a> </div>
+<div class="nav_list" id="nav_list_2">
+<div class="category"><div class="type Illustration"><font class="blue text">插画</font></div><ul><li><a href="https://www.pixiv.net/" title="Pixiv *需要科学上网" target="_blank" rel="nofollow">Pixiv</a></li><li><a href="http://www.mihuashi.com/" title="米画师" target="_blank" rel="nofollow">米画师</a></li><li><a href="https://h.bilibili.com/" title="批哩批哩相簿" target="_blank" rel="nofollow">批哩批哩相簿</a></li><li><a href="http://www.lofter.com/" title="Lofter" target="_blank" rel="nofollow">Lofter</a></li><li><a href="https://bcy.net/illust" title="半次元绘画" target="_blank" rel="nofollow">半次元绘画</a></li><li><a href="https://huaban.com/" title="花瓣" target="_blank" rel="nofollow">花瓣</a></li><li><a href="https://medibang.com/" title="原MediBang" target="_blank" rel="nofollow">ARTstreet</a></li></ul></div><div class="category"><div class="type figure"><font class="blue text">图站</font></div><ul><li><a href="https://yande.re/post" title="yande" target="_blank" rel="nofollow">Y站</a></li><li><a href="https://konachan.com/post" title="konachan" target="_blank" rel="nofollow">K站</a></li><li><a href="https://gelbooru.com/index.php?page=post&s=list&tags=all" title="gelbooru" target="_blank" rel="nofollow">G站</a></li><li><a href="https://anime-pictures.net/" title="anime-pictures厂" target="_blank" rel="nofollow">A站</a></li><li><a href="https://danbooru.donmai.us/" title="danbooru" target="_blank" rel="nofollow">D站</a></li><li><a href="https://e-shuushuu.net/top.php" title="e-shuushuu" target="_blank" rel="nofollow">E站</a></li><li><a href="https://www.sankakucomplex.com/" title="sankakucomplex" target="_blank" rel="nofollow">S站</a></li></ul></div><div class="category"><div class="type bbs"><font class="blue text">论坛</font></div><ul><li><a href="https://adnmb2.com/" title="A岛匿名版" target="_blank" rel="nofollow">A岛</a></li><li><a href="https://tnmb.org/" title="A岛备胎版" target="_blank" rel="nofollow">备胎岛</a></li><li><a href="https://bbs.saraba1st.com/" title="Stage1st" target="_blank" rel="nofollow">Stage1st</a></li><li><a href="https://bbs.nga.cn/" title="Lowbee玩家俱乐部" target="_blank" rel="nofollow">LowGA</a></li><li><a href="http://www.sosg.net/" title="SOSG动漫论坛" target="_blank" rel="nofollow">SOSG动漫论坛</a></li><li><a href="http://www.tsdm.live/" title="天使动漫" target="_blank" rel="nofollow">天使动漫</a></li><li><a href="https://bbs.acg-moe.com/" title="御宅同萌" target="_blank" rel="nofollow">御宅同萌</a></li></ul></div><div class="category"><div class="type vtuber"><font class="blue text">其他</font></div><ul><li><a href="http://www.getchu.com/" title="美少女ゲーム・アニメの情報＆通販サイト" target="_blank" rel="nofollow">Getchu</a></li><li><a href="https://anidb.net/" title="anidb" target="_blank" rel="nofollow">anidb</a></li><li><a href="https://www.youtube.com/user/bittranslate" title="未来Akari Mirai Akari Youtube频道 *需要科学上网" target="_blank" rel="nofollow">未来Akari</a></li><li><a href="https://www.youtube.com/channel/UCLhUvJ_wO9hOvv_yYENu4fQ" title="电脑少女 Siro Youtube频道 *需要科学上网" target="_blank" rel="nofollow">电脑少女Siro</a></li><li><a href="https://www.youtube.com/channel/UCWCc8tO-uUl_7SJXIKJACMw" title="神楽Mea 神楽めあ / KaguraMea Paryi Youtube频道 *需要科学上网" target="_blank" rel="nofollow">神楽Mea</a></li><li><a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg" title="Aqua Ch. 湊あくあ, Hololive Youtube频道 *需要科学上网" target="_blank" rel="nofollow">湊Aqua</a></li><li><a href="https://www.youtube.com/channel/UCevD0wKzJFpfIkvHOiQsfLQ" title="ひなたチャンネル (Hinata Channel) Youtube频道 *需要科学上网" target="_blank" rel="nofollow">猫宮Hinata</a></li><li><a href="https://www.youtube.com/channel/UCIdEIHpS0TdkqRkHL5OkLtA" title="さなちゃんねる Youtube频道 *需要科学上网" target="_blank" rel="nofollow">名取Sana</a></li><li><a href="https://www.youtube.com/channel/UC8NZiqKx6fsDT3AVcMiVFyA" title="佃煮のりおちゃんねる【犬山たまき】 Youtube频道 *需要科学上网" target="_blank" rel="nofollow">犬山玉姬</a></li><li><a href="https://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg" title="Matsuri Channel 夏色まつり, Hololive Youtube频道 *需要科学上网" target="_blank" rel="nofollow">夏色祭</a></li><li><a href="https://www.youtube.com/channel/UCD-miitqNY3nyukJ4Fnf4_A" title="月ノ美兎, にじさんじ Youtube频道 *需要科学上网" target="_blank" rel="nofollow">月之美兔</a></li><li><a href="https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" title="フブキCh。白上フブキ, Hololive Youtube频道 *需要科学上网" target="_blank" rel="nofollow">白上吹雪</a></li><li><a href="https://www.youtube.com/channel/UCsg-YqdqQ-KFF0LNk23BY4A" title="樋口楓, にじさんじ Youtube频道 *需要科学上网" target="_blank" rel="nofollow">樋口枫</a></li><li><a href="https://www.youtube.com/channel/UC0g1AE0DOjBYnLhkgoRWN1w" title="本間ひまわり - Himawari Honma -, にじさんじ Youtube频道 *需要科学上网" target="_blank" rel="nofollow">本间向日葵</a></li><li><a href="https://www.youtube.com/channel/UCPvGypSgfDkVe7JG2KygK7A" title="竜胆 尊 / Rindou Mikoto, にじさんじ Youtube频道 *需要科学上网" target="_blank" rel="nofollow">龙胆尊</a></li><li><a href="https://www.youtube.com/channel/UCH0ObmokE-zUOeihkKwWySA" title="ユメノシオリ / Yumeno_shiori Ch, Paryi Youtube频道 *需要科学上网" target="_blank" rel="nofollow">ユメノシオリ</a></li><li><a href="https://www.youtube.com/channel/UCIaC5td9nGG6JeKllWLwFLA" title="有栖マナ/Alice mana, Paryi Youtube频道 *需要科学上网" target="_blank" rel="nofollow">有栖Mana</a></li></ul></div><div class="category"><div class="type bituber"><font class="blue text">BTB</font></div><ul><li><a href="https://space.bilibili.com/1473830" title="绊爱 批哩批哩搬运地址" target="_blank" rel="nofollow">绊爱</a></li><li><a href="https://space.bilibili.com/265224956" title="辉夜月 批哩批哩搬运地址" target="_blank" rel="nofollow">辉夜月</a></li><li><a href="https://space.bilibili.com/238537745" title="未来Akari 批哩批哩搬运地址" target="_blank" rel="nofollow">未来Akari</a></li><li><a href="https://space.bilibili.com/391876799" title="电脑少女Siro 批哩批哩搬运地址" target="_blank" rel="nofollow">电脑少女Siro</a></li><li><a href="https://space.bilibili.com/349991143" title="神楽Mea 批哩批哩搬运地址" target="_blank" rel="nofollow">神楽Mea</a></li><li><a href="https://space.bilibili.com/375504219" title="湊Aqua 批哩批哩搬运地址" target="_blank" rel="nofollow">湊Aqua</a></li><li><a href="https://space.bilibili.com/291296062" title="猫宮Hinata 批哩批哩搬运地址" target="_blank" rel="nofollow">猫宮Hinata</a></li><li><a href="https://space.bilibili.com/12362451" title="犬山玉姬 批哩批哩搬运地址" target="_blank" rel="nofollow">犬山玉姬</a></li><li><a href="https://space.bilibili.com/336731767" title="夏色祭 批哩批哩搬运地址" target="_blank" rel="nofollow">夏色祭</a></li><li><a href="https://space.bilibili.com/109891" title="月之美兔 批哩批哩搬运地址" target="_blank" rel="nofollow">月之美兔</a></li><li><a href="https://space.bilibili.com/332704117" title="白上吹雪 批哩批哩搬运地址" target="_blank" rel="nofollow">白上吹雪</a></li><li><a href="https://space.bilibili.com/344515485" title="樋口枫 批哩批哩搬运地址" target="_blank" rel="nofollow">樋口枫</a></li><li><a href="https://space.bilibili.com/403928672" title="本间向日葵 批哩批哩搬运地址" target="_blank" rel="nofollow">本间向日葵</a></li><li><a href="https://space.bilibili.com/384064360" title="龙胆尊 批哩批哩搬运地址" target="_blank" rel="nofollow">龙胆尊</a></li><li><a href="https://space.bilibili.com/372984197" title="ユメノシオリ 批哩批哩搬运地址" target="_blank" rel="nofollow">ユメノシオリ</a></li><li><a href="https://space.bilibili.com/3149619" title="有栖Mana 批哩批哩搬运地址" target="_blank" rel="nofollow">有栖Mana</a></li><li><a href="https://space.bilibili.com/337827661" title="陆婉莹 批哩批哩搬运地址" target="_blank" rel="nofollow">陆婉莹</a></li><li><a href="https://space.bilibili.com/1826804" title="爱夏NATSU 批哩批哩搬运地址" target="_blank" rel="nofollow">爱夏NATSU</a></li><li><a href="https://space.bilibili.com/387108043" title="莉姬 批哩批哩搬运地址" target="_blank" rel="nofollow">莉姬</a></li><li><a href="https://space.bilibili.com/441828861" title="和遥树奈Project 批哩批哩搬运地址" target="_blank" rel="nofollow">和遥树奈Project</a></li></ul></div><div class="category"><div class="type idol"><font class="blue text">爱豆</font></div><ul><li><a href="https://avgle.com/" title="avgle直接点击无效" target="_blank" rel="nofollow">★复制打开</a></li><li><a href="https://jp.pornhub.com/" title="pornhub" target="_blank" rel="nofollow">★维度空间</a></li><li><a href="http://www.maeda-atsuko.cn/" title="阿酱论坛" target="_blank" rel="nofollow">阿酱论坛</a></li><li><a href="https://www.snh48.com/" title="SNH48 官方网站" target="_blank" rel="nofollow">SNH48</a></li><li><a href="https://www.akiba.cc/" title="AKIBA日娱" target="_blank" rel="nofollow">AKIBA日娱</a></li><li><a href="https://www.keyakizaka46.com/" title="榉坂46 官方网站" target="_blank" rel="nofollow">榉坂46</a></li><li><a href="https://www.nogizaka46.com/" title="乃木坂46 官方网站" target="_blank" rel="nofollow">乃木坂46</a></li><li><a href="https://www.hinatazaka46.com/" title="日向坂46 官方网站" target="_blank" rel="nofollow">日向坂46</a></li><li><a href="http://yoshimotozaka46.com/" title="吉本坂46 官方网站" target="_blank" rel="nofollow">吉本坂46</a></li><li><a href="http://www.ske48.co.jp/" title="SKE48 官方网站" target="_blank" rel="nofollow">SKE48</a></li><li><a href="http://www.nmb48.com/" title="NMB48 官方网站" target="_blank" rel="nofollow">NMB48</a></li><li><a href="http://www.hkt48.jp/" title="HKT48 官方网站" target="_blank" rel="nofollow">HKT48</a></li><li><a href="https://ngt48.jp/" title="NGT48 官方网站" target="_blank" rel="nofollow">NGT48</a></li><li><a href="https://www.stu48.com/" title="STU48 官方网站" target="_blank" rel="nofollow">STU48</a></li><li><a href="https://lastidol.com/" title="Last iDOL 官方网站" target="_blank" rel="nofollow">Last iDOL</a></li></ul></div></div>
+<div class="ads">
+<a href="" target="_blank"><img class="adsimg" src=""></a> </div>
+<div class="nav_list" id="nav_list_3">
+<div class="category"><div class="type download"><font class="purple text">下载</font></div><ul><li><a href="https://share.acgnx.net/" title="末日动漫资源库" target="_blank" rel="nofollow">末日动漫</a></li><li><a href="https://bangumi.moe/" title="萌番组" target="_blank" rel="nofollow">萌番组</a></li><li><a href="https://acg.rip/" title="ACG Rap" target="_blank" rel="nofollow">ACG.RIP</a></li><li><a href="https://share.dmhy.org/" title="动漫花园资源网 *需要科学上网" target="_blank" rel="nofollow">动漫花园</a></li><li><a href="https://nyaa.si/" title="Nyaa.Si *需要科学上网" target="_blank" rel="nofollow">Nyaa</a></li><li><a href="https://www.acgnx.se/" title="末日动漫资源库国际版本 *需要科学上网" target="_blank" rel="nofollow">ACGNX</a></li><li><a href="https://www.tokyotosho.info/" title="东京图书馆 *需要科学上网" target="_blank" rel="nofollow">东京图书馆</a></li></ul></div><div class="category"><div class="type subtitle"><font class="purple text">字幕</font></div><ul><li><a href="https://dmguo.org/" title="动漫国字幕组" target="_blank" rel="nofollow">动漫国</a></li><li><a href="https://dhr.moe/" title="DHR动研字幕组" target="_blank" rel="nofollow">DHR动研</a></li><li><a href="https://bbs.dymy.org/" title="动音漫影字幕组" target="_blank" rel="nofollow">动音漫影</a></li><li><a href="https://vcb-s.com/" title="VCB-Studio" target="_blank" rel="nofollow">VCB-Studio</a></li><li><a href="https://www.mahou-shoujo.moe/" title="ANK-Raws" target="_blank" rel="nofollow">ANK-Raws</a></li><li><a href="https://www.pusacg.org/" title="紫音动漫组" target="_blank" rel="nofollow">紫音动漫组</a></li><li><a href="https://www.airota.net/" title="千夏字幕组" target="_blank" rel="nofollow">千夏字幕组</a></li></ul></div><div class="category"><div class="type cosplay"><font class="purple text">COS</font></div><ul><li><a href="https://bcy.net/coser" title="半次元CoS" target="_blank" rel="nofollow">半次元CoS</a></li><li><a href="https://worldcosplay.net/" title="World Cos" target="_blank" rel="nofollow">World Cos</a></li><li><a href="http://www.cosplay8.com/" title="Cosplay8" target="_blank" rel="nofollow">Cosplay8</a></li><li><a href="https://acg.178.com/list/cosplay/" title="178 Cosplay频道" target="_blank" rel="nofollow">178 CoS</a></li><li><a href="https://www.cosplaymore.com/" title="COS联盟" target="_blank" rel="nofollow">COS联盟</a></li><li><a href="https://t2cy.com/acg/cos/" title="推二次元" target="_blank" rel="nofollow">推二次元</a></li><li><a href="https://www.cosplayla.com/" title="Cosplay啦" target="_blank" rel="nofollow">Cosplay啦</a></li></ul></div><div class="category"><div class="type blog"><font class="purple text">博客</font></div><ul><li><a href="https://xygalgame.com/" title="初音的青葱" target="_blank" rel="nofollow">初音的青葱</a></li><li><a href="https://www.acgpiping.net/" title="ACG批评" target="_blank" rel="nofollow">ACG批评</a></li><li><a href="https://www.butongshe.com/" title="钚同社" target="_blank" rel="nofollow">钚同社</a></li><li><a href="http://www.cxacg.com/" title="橙心社" target="_blank" rel="nofollow">橙心社</a></li><li><a href="https://www.moejam.com/" title="梦域动漫" target="_blank" rel="nofollow">梦域动漫</a></li><li><a href="https://mag.moe/" title="卖个萌" target="_blank" rel="nofollow">卖个萌</a></li><li><a href="https://acgsoso.com/" title="ACG调查小队" target="_blank" rel="nofollow">ACG调查小队</a></li></ul></div><div class="category"><div class="type hentai"><font class="purple text">绅士</font></div><ul><li><a href="https://www.google.co.jp/search?q=%E5%A5%BD%E8%90%8C%E5%8A%A8%E6%BC%AB" title="好萌动漫" target="_blank" rel="nofollow">好萌动漫</a></li><li><a href="https://www.vikacg.com/" title="维咔VikACG" target="_blank" rel="nofollow">维咔VikACG</a></li><li><a href="https://www.summer-plus.net/thread_new.php?fid=135" title="galgame图墙区" target="_blank" rel="nofollow">东西南北魂+</a></li><li><a href="https://www.hmoe.one/" title="萌幻之乡" target="_blank" rel="nofollow">萌幻之乡</a></li><li><a href="https://www.gtloli.one/forum.php" title="哥特动漫王国" target="_blank" rel="nofollow">哥特动漫王国</a></li><li><a href="https://cangku.io/" title="绅士仓库" target="_blank" rel="nofollow">绅士仓库
+</a></li><li><a href="https://www.liuli.se/" title="琉璃神社" target="_blank" rel="nofollow">琉璃神社</a></li><li><a href="https://blog.reimu.net/" title="灵梦御所" target="_blank" rel="nofollow">灵梦御所</a></li></ul></div><div class="category"><div class="type Galgame"><font class="purple text">GAL</font></div><ul><li><a href="https://bbs.kfmax.com/" title="绯月ScarletMoon" target="_blank" rel="nofollow">绯月Gal</a></li><li><a href="https://vndb.org/" title="VNDB" target="_blank" rel="nofollow">VNDB</a></li><li><a href="https://zodgame.xyz/" title="zodgame" target="_blank" rel="nofollow">zodgame</a></li><li><a href="https://www.cngal.org/" title="CNGAL" target="_blank" rel="nofollow">CNGAL</a></li><li><a href="https://galge.fun/" title="2DFan" target="_blank" rel="nofollow">2DFan</a></li><li><a href="https://bbs.zdfx.net/forum-2-1.html" title="终点论坛" target="_blank" rel="nofollow">终点论坛</a></li><li><a href="http://panapanapana.web.fc2.com/" title="EROGE.COM" target="_blank" rel="nofollow">EROGE.COM</a></li></ul></div></ul></div></div>
+<div class="nav_list" id="nav_list_4">
+
+<div class="category"><div class="type shopping"><font class="green text">本子</font></div><ul><li><a href="https://exhentai.org/?f_doujinshi=0&f_manga=0&f_artistcg=0&f_gamecg=1&f_western=0&f_non-h=0&f_imageset=0&f_cosplay=0&f_asianporn=0&f_misc=0&seltag=%22age+progression%22&f_search=&f_apply=%E5%BA%94%E7%94%A8%E8%BF%87%E6%BB%A4" title="EXCG" target="_blank" rel="nofollow">EXCG</a></li><li><a href="https://exhentai.org/?f_cats=1017&seltag=%22age+progression%22" title="EX本子" target="_blank" rel="nofollow">EX本子</a></li><li><a href="https://exhentai.org/" title="EX全标签" target="_blank" rel="nofollow">EX全标签</a></li><li><a href="https://forums.e-hentai.org/index.php?" title="EX论坛" target="_blank" rel="nofollow">EX论坛</a></li><li><a href="https://e-hentai.org/?f_cats=1007" title="EHCG" target="_blank" rel="nofollow">EHCG</a></li><li><a href="http://nhentai.net/" title="nhentai" target="_blank" rel="nofollow">nhentai</a></li><li><a href="https://www.google.co.jp/search?q=%E7%A6%81%E6%BC%AB%E5%A4%A9%E5%A0%82" title="禁漫天堂" target="_blank" rel="nofollow">禁漫天堂</a></li></ul></div><div class="category"><div class="type loaf"><font class="green text">摸鱼</font></div><ul><li><a href="https://seiya-saiga.com/save.html" title="誠也の部屋" target="_blank" rel="nofollow">誠也の部屋</a></li><li><a href="http://sagaoz.net/savedata/" title="セーブデータのページ
+" target="_blank" rel="nofollow">另一个存档网</a></li><li><a href="http://steamworkshop.download/" title="WE壁纸下载网" target="_blank" rel="nofollow">we壁纸下载</a></li><li><a href="https://steamcommunity.com/workshop/browse/?appid=431960&browsesort=trend&section=readytouseitems&actualsort=trend&p=5" title="Wallpaper Engine：壁纸引擎" target="_blank" rel="nofollow">壁纸引擎</a></li><li><a href="https://www.wnacg.com/albums.html" title="紳士漫畫" target="_blank" rel="nofollow">紳士漫畫</a></li><li><a href="https://zh.erocool.co/" title="EroCool - 免費工口同人誌" target="_blank" rel="nofollow">EroCool</a></li><li><a href="https://hot.mrcuriosity.org/" title="知乎、V2EX、贴吧、豆瓣、天涯、虎扑当日热榜" target="_blank" rel="nofollow">今日热榜</a></li></ul></div><div class="category"><div class="type dev"><font class="green text">编程</font></div><ul><li><a href="https://hanime1.me/search" title="hanime1在线里番" target="_blank" rel="nofollow">hanime1</a></li><li><a href="https://avbebe.com/archives/category/h%e5%8b%95%e7%95%ab%e5%bd%b1%e7%89%87" title="avbebe在线里番" target="_blank" rel="nofollow">avbebe</a></li><li><a href="https://www.oschina.net/" title="开源中国" target="_blank" rel="nofollow">开源中国</a></li><li><a href="https://stackoverflow.com/" title="StackOverflow" target="_blank" rel="nofollow">StackOverflow</a></li><li><a href="https://www.runoob.com/" title="菜鸟教程" target="_blank" rel="nofollow">菜鸟教程</a></li><li><a href="https://www.csdn.net/" title="CSDN" target="_blank" rel="nofollow">CSDN</a></li><li><a href="https://segmentfault.com/" title="SegmentFault 思否" target="_blank" rel="nofollow">SegmentFault</a></li></ul></div><div class="category"><div class="type tools"><font class="green text">工具</font></div><ul><li><a href="https://tool.chinaz.com/" title="站长工具" target="_blank" rel="nofollow">站长工具</a></li><li><a href="https://tool.lu/" title="在线工具" target="_blank" rel="nofollow">在线工具</a></li><li><a href="https://tinypng.com/" title="图片压缩" target="_blank" rel="nofollow">TinyPNG</a></li><li><a href="https://cli.im/" title="草料二维码" target="_blank" rel="nofollow">草料二维码</a></li><li><a href="https://gifcompressor.com/zh/" title="GIF压缩" target="_blank" rel="nofollow">GIF压缩</a></li><li><a href="http://waifu2x.udp.jp/" title="waifu2x" target="_blank" rel="nofollow">Waifu2x</a></li><li><a href="https://www.photopea.com/" title="在线PS" target="_blank" rel="nofollow">Photopea</a></li></ul></div></div>
+<div class="clear"></div>
+<div class="footer">
+<div class="link">
+<div class="linktop">
+<span></span></div>
+<ul>
+<li><a href="https://www.google.co.jp" target="_blank">谷歌日本</a></li>
+<li><a href="https://share.acgnx.net" target="_blank">末日動漫資源庫</a></li>
+<li><a href="https://www.south-plus.net" target="_blank">南+</a></li>
+<li><a href="https://gmgard.com" target="_blank">绅士之庭</a></li>
+<li><a href="https://cangku.io/" target="_blank">绅士仓库</a></li>
+<li><a href="https://www.google.co.jp" target="_blank">谷歌日本</a></li>
+
+<br class="clear"></div>
+</div>
+
+</body>
+</html>
